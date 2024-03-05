@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A-E-I lOvE U</title>
+</head>
+<body>
+    <script>
+        var v = prompt("Enter string: ");
+        
+        function countVowels(v) {
+            var x = 0; 
+            for (var i = 0; i < v.length; i++) {
+                if (v[i] === 'a' || v[i] === 'e' || v[i] === 'i' || v[i] === 'o' || v[i] === 'u' || v[i] === 'A' || v[i] === 'E' || v[i] === 'O' || v[i] === 'U') {
+                    x = x + 1;
+                }
+            }
+            return x; 
+        }
+        
+        var numVowels = countVowels(v);
+        if (numVowels === 0) {
+            alert("There are no vowels in the string.");
+        } else if (numVowels === 1) {
+            alert("There is 1 vowel in the string.");
+        } else {
+            alert("There are " + numVowels + " vowels in the string.");
+        }
+    </script>
+</body>
+</html>
